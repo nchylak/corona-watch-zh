@@ -56,8 +56,6 @@ finally:
 
 if old != new:
     send_email(old, new)
-else:
-    send_email(old, new) #for testing
 
 with open("old.txt", "w") as f:
     f.write(new)
